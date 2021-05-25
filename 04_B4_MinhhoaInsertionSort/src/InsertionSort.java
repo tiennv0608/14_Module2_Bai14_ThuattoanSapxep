@@ -24,13 +24,12 @@ public class InsertionSort {
             x = array[i];
             pos = i;
             if (pos > 0 && x < array[pos - 1]) {
-                int temp = array[pos];
                 while (pos > 0 && x < array[pos - 1]) {
                     array[pos] = array[pos - 1];
                     pos--;
                 }
                 array[pos] = x;
-                System.out.println("Insert " + temp + " into position " + pos);
+                System.out.println("Insert " + x + " into position " + pos);
             }
             System.out.println("List after " + i + " sort:");
             for (int j = 0; j < array.length; j++) {
