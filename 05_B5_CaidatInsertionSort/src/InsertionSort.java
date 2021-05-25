@@ -23,10 +23,10 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int[] list = {12, 6, 3, 19, 5, 2, 1, 14};
-        System.out.println("Truoc khi sap xep");
+        System.out.println("Before sorting");
         display(list);
         insertionSort(list);
-        System.out.println("Sau khi sap xep");
+        System.out.println("After sorting");
         display(list);
     }
 }
