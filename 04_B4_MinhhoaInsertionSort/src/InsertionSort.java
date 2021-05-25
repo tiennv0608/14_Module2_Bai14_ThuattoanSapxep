@@ -20,13 +20,13 @@ public class InsertionSort {
 
     public static void insertionSort(int[] array) {
         int pos, x;
-        for (int i = 1; i < array.length; i++) { //đoạn array[0] đã sắp xếp
+        for (int i = 1; i < array.length; i++) {
             x = array[i];
             pos = i;
             if (pos > 0 && x < array[pos - 1]) {
                 int temp = array[pos];
                 while (pos > 0 && x < array[pos - 1]) {
-                    array[pos] = array[pos - 1]; // đổi chỗ
+                    array[pos] = array[pos - 1];
                     pos--;
                 }
                 array[pos] = x;
